@@ -1,0 +1,67 @@
+Question 1:
+How did viewing a diff between two versions of a file help you see the bug that was introduced?
+
+Answer:
+Using the diff -u on my Mac OS really helped me locate that bug that was introduced in the Javascript game file, because the computer basically reads every character of code for me in both the old and new JS game file and was able to pin point out ALL the differences between those files. 
+
+It did this by categorizing my old game file as a - and my new file as a +. So if I had a - next to some line of code that meant the code on that line was in my old JS file but not in my new one. And vice versa with the new Javascript file. If a line of code began with a  +, it meant whatever code on that line was in my new JS file and not in my old one.
+
+
+
+Question 2:
+How could having easy access to the entire history of a file make you a more efficient programmer in the long term?
+
+Answer:
+Having access to the entire history of your app can make you a very effective programmer because you wouldn't have to worry about your code ever breaking and or encountering a road block in the future. You can experiment all you want with the current code you have and if it did ever happen to break in future, you can easily revert back to you older version program and start from where it was last working. 
+
+
+
+Question 3:
+What do you think are the pros and cons of manually choosing when to create a commit, like you do in Git, vs having versions automatically saved, like Google Docs does?
+
+Answer:
+After watching this recent lecture, I strongly feel that their are way more advantages when manually controlling when to save each version of a file. 
+
+- First of all, their are some version control systems out their, that can save all of your files  OFFLINE. So this is one big plus because you don't need to have internet connection AT ALL.
+- Secondy, when saving files manually, you(Not the computer) can choose when it would be a good time to commit. Whenever you feel your code has added a new meaning or new purpose that your last version didn't have, you have the option to commit it(And you should commit it).
+- By saving manually you can control the length of all your commits. Whereas with Google drive, their will be tons of different versions, which will be confusing when diving into its source.
+
+
+Question 4:
+Why do you think some version control systems, like Git, allow saving multiple files in one commit, while others, like Google Docs, treat each file separately?
+
+Answer:
+Well with Git if you ever wanted to revert back to your code it would very efficient if all your code was their at that current time ready to be used. If git only allowed you to commit one file at a time, it would be very unconvenient because if you ever needed to retrieve a older version of your file, then you would pretty much have to extract each file individually until you grabbed everything to make your app run.
+Google Docs is different. Usually the files you have on their are not really depending too much on other files so it makes sense for it to save each file individually.
+
+
+
+
+Question 5:
+How can you use the commands git log and git diff to view the history of files?
+
+Answer:
+Git log is used to see every commit you have created in a certain repository. Git log is very useful because it includes the id, the author, the timestamp and the message of all those commits.
+
+Git Diff takes in any two commit id's and will point out all the differences between them.
+
+
+
+Question 6:
+How might using version control make you more confident to make changes that could break something?
+
+Answer:
+Like with one of my previous answers, version control allows you to revert back to any working version of your project. So if you had a working copy already saved in your repository, then you can feel free to add whatever changes you want whether it is to advance it or to either mess around with it. And if your code ever breaks, you really don't have to worry because you already have a working version of it. And to revert to that working copy simply type git checkout (FILENAME).
+
+
+
+Question 7:
+Now that you have your workspace set up, what do you want to try using Git for?
+
+Answer:
+I want to use git to establish version control on ALL my projects.
+
+
+
+
+
