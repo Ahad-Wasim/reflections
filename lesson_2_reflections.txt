@@ -12,3 +12,61 @@ How is the staging area different from the working directory and the repository?
 
 Response:
 The staging area is basically the middle man between the working directory and the repository. The staging area does what it basically says. It allows you to set up and track all your files before you send it out to your repository. It grabs all the files YOU WANT from the working directory, then holds on to it on the stagin area, and when your ready you can just send it off to the repository. A reason on why I think this is so valuable is because it makes us organize all our files before we send it off to the repository. Us humans are always running into so many errors, so it helps to organize everything. Its kind of like a confirmation for us because it will alert you if THESE ARE THE FILES YOU WANT TO COMMIT.
+
+
+
+
+
+Question 3:
+How can you use the staging area to make sure you have one commit per logical change?
+
+You can use the staging area to check if you made a logical change by using the diff keys that are meant for the staging areas. THE STAGING AREA WILL HOLD THE MOST RECENT COMMIT IN THE REPOSITORY. To check if you added logical changes in your project you can simply compare your working directory to the staging area because the staging area holds your last latest commit. Simply type git diff(Without any arguments) and it will check your current code in your working directory with the last commit in the repository which is also in the staging area. And if it finds a difference well you can then check to see if its logical. If it is then you should probably add that to the staging area.
+
+- Before you commit the the files from the staging area to the repo, you should do one last check to see if the files in the staging area are first of all the acutal files you want to commit, and secondly if the files in the staging area has all the new updated code that the current repo doesn't. To check this simply type git diff --staged. It will check the changes from your staging area to your working directory and if everything seems alright for you then go ahead and commit it.
+
+
+
+Question 3:
+What are some situations when branches would be helpful in keeping your history organized? How would branches help?
+
+Response:
+
+When you want to experiment on your project but you don't want it to affect your master branch. It is good to create a whole new branch. Or if you want to have a sub version of your file or example like a easy mode of a game we want to have a easy mode branch.
+
+Branches can be very useful because instead of keeping all your commits linear in one line and categorizing them by long sequence of numbers, you can simply create a new branch so that your commits are not linear any more. You can also name your branches as well so it makes it easier to look through your repository if your looking for a certain commit.
+
+
+
+Question 4:
+How do the diagrams help you visualize the branch structure?
+
+Response:
+Well branches can get confusing very fast. You many have so many commits and when you run git log, you may notice that some of the commits are not their. Well you can find out why its not their but its a headache. If you create a diagram with a branch structure, it will really reduce the hassle because you can check all the commits parents, when a branch was committed, how much did the master branch update when I created my branch and etc. Keeping this visual structure is really helpful.
+
+
+
+
+
+Question 5:
+What is the result of merging two branches together? Why do we represent it in the diagram the way we do?
+
+Response:
+The result of merging two branches together is a file that contains code from both those branches. Usually this would be the most up to date code so its best if you merge everything to the master branch. When merging branches in the diagram the commits parent relationship can get confusing quicly so by drawing it out it makes sense.
+
+
+
+Question 6:
+What are the pros and cons of Git’s automatic merging vs. always doing merges manually?
+
+Response:
++ At times it may be convenient if Git can recognize by itself what files need to be merged because you don't have to go through that hassle yourself.
++ Usually Git starts merging at the point in time in which both files were related. If it nothing was changed to the original file, it can merge itself. However it git is confused on which files need merging than your going to have to do it manually.
+- Usually with many computer languages where you put your code and lead to problems. Git can randomly attach code to your file but it may not be sytactically correct.
+
++ Merging by yourself is more convenient because you can view each code line by line and spot any errors that the computer can not.
+- You have to go through more time looking through the code.
+
+
+
+
+
