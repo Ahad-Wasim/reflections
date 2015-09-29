@@ -1,0 +1,7 @@
+Question 1:
+When would you want to use a remote repository rather than keeping all your work local?
+
+Response:
+- You would generally want to use a remote repository if you want to share your code to your friends or to just leave it for the whole open source community to view. Pushing your code onto the remote repository makes it possible for others ANYWHERE IN THE WORLD to view your code because it is hassle free. Everything is displayed online in a easy to read format. 
+- Having the whole open source community viewing your code can be extremely useful not only to you, but to a lot of developers out their as well. They could either learn from your code or add some changes to it to make it more efficient.
+- Another reason on why having your code stored on a remote repository can be super helpful is because you can lose all your files on your working directory and their may be know way to recovering them back. Well if you have a working version of your project online, then you can easily retreive it back just by typing git clone.
