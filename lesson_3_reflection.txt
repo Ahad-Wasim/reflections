@@ -12,3 +12,13 @@ Why might you want to always pull changes manually rather than having Git automa
 
 Response:
 Well in order to collaborate effectively on a project you have to share a repo with your group. That repo's master branch will continue to change throughout your whole project. So in order to work on the latest repo's over and over agiain you will need to pull them from the remote repo.
+
+Question 3:
+Describe the differences between forks, clones, and branches. When would you use one instead of another?
+
+Response:
+Forks - Copying another contributors repo and pasting that repo on your profile. By doing this you give credit to the original creator. And with that copy you have on your repo you can push directly to that repo(Not the original creator of that repo). The origin when you clone the repo to your computer is set to the remote URL of that copied repo on your profile.
+
+Clone - Simply copies the entire repo including its commit history(git log). Origin is set to the contributors origin.
+
+Branches - You can choose which branch to clone. Generally the master branch has all the useful features that you may want to use so the master branch is usually what you clone and push.
