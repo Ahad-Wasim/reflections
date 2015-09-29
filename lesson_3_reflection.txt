@@ -22,3 +22,29 @@ Forks - Copying another contributors repo and pasting that repo on your profile.
 Clone - Simply copies the entire repo including its commit history(git log). Origin is set to the contributors origin.
 
 Branches - You can choose which branch to clone. Generally the master branch has all the useful features that you may want to use so the master branch is usually what you clone and push.
+
+
+
+Question 5:
+What is the benefit of having a copy of the last known state of the remote stored locally?
+
+Response:
+Well lets say we cloned a repo remotely. Well that repo is stored on the origin/master branch. This basically takes a snapshot of the remote repo. NOTE ORIGIN MASTER IS FOUND LOCALLY AND IS DIFFERNT FROM THE MASTER BRANCH. So lets say we added some code on our local master branch. And some person added some code on the remote master branch. Well we want to use that latest code in our master branch. How do we grab that code without pulling it. If we pulled the code we would lose all our changes. Well we could fetch that code. By fetching the code we are basically taking a snapshot of it and setting it in our origin/master branch. Now we can literally merge the master origin/master(the latest code on github). We merge commit and push. Because of storing the last known state code remotely we can check to see if the local state copy has changed without it affecting our actual code.
+
+
+Question 6:
+How would you collaborate without using Git or GitHub? What would be easier, and what would be harder?
+
+Response: 
+To colloborate without using github you can sumbit pull requests. Pull request is basically asking the owner of the repository that I have created some code. Can you check it and if its good can you merge it with the master branch.
+
+So the format to follow is to create a new branch(This branch will contain the most up to date code for the master branch). Then you do your changes on that branch. Commit to the remote repo. Now go on github. Go to that remote repo. Click on your branch and sumbit a pull request. THEIR WILL BE A LINK TO WHICH BRANCH YOU WANT TO MERGE TO. MAKE SURE ITS THE RIGHT MASTER BRANCH. Write a message for the creator of that branch to see. And that person will decide to merge your changes if they liked it or not.
+
+
+Question 7:
+When would you want to make changes in a separate branch rather than directly in master? What benefits does each approach have?
+
+Response:
+Working in a separate branch ensures that your master branch is always kept in a working state. You can try and experiment new functionality or algorithm in the new branch untill you are sure it works without breaking anything. On the other hand, an obvious fix for e.g. easy misspelling would not need much experimenting and could be fixed directly in the master branch.
+
+- Working in a separate branch also allows you to create pull requests. Like mentioned above, you can perform any modification you want to your code in a seperate branch and then push that branch to github. Over their you check into that branch, and create a pull request(better if you think of it as a merge request) so that others can see your code. If they like it they can merge it to the master branch.
